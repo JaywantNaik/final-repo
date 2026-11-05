@@ -1,0 +1,28 @@
+body{
+    display: flex;
+    min-height: 100vh;
+    padding: 30px;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.form{
+    justify-content: center;
+    align-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: beige;
+    border: 5px solid black;
+    border-radius: 5px;
+    box-sizing: 400px;
+    box-shadow: 100px solid rgb(128, 27, 27);
+}
+.form button:hover{
+    
+    align-items: center;
+    background-color: blue;
+    color: aquamarine;
+    cursor: pointer;
+}

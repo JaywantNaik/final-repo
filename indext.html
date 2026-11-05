@@ -1,0 +1,30 @@
+<html>
+    <link rel="stylesheet" href="style.css">
+    <body>
+        <div class="form">
+            <h1>Registration Form</h1>
+            <form id="form">
+                <label>Name:</label>
+                <input type="text" name="name"><br>
+                <label>Email:</label>
+                <input type="text" name="email"><br>
+                <label>Date:</label>
+                <input type="date" name="date"><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <script>
+            document.getElementById("form").onsubmit=function(e){
+                e.preventDefault();
+                fetch("https://script.google.com/macros/s/AKfycbxMQv9kbuW7iAZZr4K46m7p7i-p7F_G8Edz4dceprvQm5U09Fmk3kCp5yi17Al0LBi7lQ/exec",{
+                    method:"POST",
+                    mode:"no-cors",
+                    body:new URLSearchParams(new FormData(this))
+                }).then(()=>{
+                    alert("Data Submitted");
+                    this.reset();
+                })
+            }
+        </script>
+    </body>
+</html>
